@@ -16,12 +16,10 @@
 <body>
 
     <div id="app">
-
         <header class="header">
             <img class="logo" src="./assets/techno.svg" alt="Techno">
             <div class="carrinho_menu" @click="carrinhoAtivo = true">{{carrinhoTotal | numeroPreco}} | {{carrinho.length}} </div>
         </header>
-
 
         <section class="produtos">
             <div v-for="item in produtos" @click="abrirModal(item.id)" :key="item.id" class="produto">
